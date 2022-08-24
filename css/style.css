@@ -52,6 +52,7 @@ body {
     margin-right: auto;
     height: 00px;
     padding-left: 35px;
+    padding-bottom: 0;
     
 }
 * {
@@ -81,7 +82,7 @@ body {
     margin-left: auto;
 }
 .intro {
-    font-size: 35px;
+    font-size: 30px;
     float: right;
     display: flex;
     flex-wrap: wrap;
@@ -95,15 +96,25 @@ body {
     padding-top: 425px;
     padding-left: 750px;
     padding-right: 200px;
+    padding-bottom: 0;
+    color: rgb(96, 74, 50);
 
 }
-.button {
+button {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    color: rgb(250, 249, 244);
+    background-color:rgb(62, 20, 21)
     
 }
 .heroImg {
     clear: both;
-    padding-bottom: 100px ;
-    margin-bottom: auto;
+    padding-bottom: 0;
+    margin-bottom: 0;
     height: 1000px;
     width: 1000px;
 }
@@ -120,6 +131,99 @@ body {
     padding: 20px;
     color: white;
 }
+.case-studies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(62, 20, 21);
+    background-color: rgb(142, 154, 130);
+    border-top: 10px solid rgb(54, 57, 30);
+    border-bottom: 10px solid rgb(54, 57, 30);
+    width: auto;
+    height: 100px;
+    font: bold;
+    font-size: 50px;
+}
+.flexContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(54, 57, 30);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+    height: auto;
+}
+.Angel-Paws {
+    background-color: rgb(250, 249, 244);
+    color: rgb(96, 74, 50);
+    font: bolder;
+    width: auto;
+    border: 10px solid rgb(142, 154, 130);
+    padding: 25px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: normal;
+    justify-content:space-around
+}
+.Angel-Paws > h3 {
+    font-size: 36px;
+    font:bolder;
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.NSA {
+    background-color: rgb(250, 249, 244);
+    color: rgb(96, 74, 50);
+    font: bolder;
+    width: auto;
+    border: 10px solid rgb(142, 154, 130);
+    padding: 25px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: normal;
+    justify-content:space-around
+}
+.NSA > h3 {
+    font-size: 36px;
+    font:bolder;
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.Skills > image {
+    float: left;
+    display: block;
+    justify-content: center;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    height: 00px;
+    padding-left: 35px;
+    padding-bottom: 0;
+}
+.about-section { grid-area: about;}
+.grad { grid-area: img;}
+.SkillsSec { grid-area: skills;}
+
+
+.SkillsGrid {
+    display: grid;
+    grid-template-areas:
+        'about about about about about about'
+        'img img skills skills skills skills'
+        'img img skills skills skills skills';
+        gap: 10px;
+        padding: 10px;
+}
+.SkillsGrid > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 26px;
+}
 .footer {
     background: rgb(62, 20, 21);
     color:white;
@@ -128,7 +232,7 @@ body {
     left: 0;
     right: 0;
     height: auto;
-    width: 100vw;
+    width: 100%;
     flex-grow: 1;
   }
   .footer-content{
@@ -144,10 +248,40 @@ body {
     padding-bottom: 10px;
     margin: 25px;
 }
-@media (max-width:500px) {
+@media (max-width:600) {
     .footer ul{
     display: flex;
     margin-top: 10px;
     margin-bottom: 20px;
     }
+}
+@media only screen and (max-width:600) {
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+        .about-section { grid-area: about;}
+        .grad { grid-area: img;}
+        .SkillsSec { grid-area: skills;}
+
+
+        .SkillsGrid {
+            display: grid;
+            grid-template-areas:
+                'about'
+                'img'
+                'skills';
+                gap: 10px;
+             padding: 10px;
+            }
+        .SkillsGrid > div {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 26px;
+        }
+
+
+
+    
 }
