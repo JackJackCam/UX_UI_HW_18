@@ -1,0 +1,153 @@
+
+html,
+body {
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(250, 249, 244);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+}
+#wrap {
+    min-height: 100%;
+}
+#main {
+    overflow: auto;
+    padding-bottom: 180px;
+}
+
+.logo {
+    float: left;
+    vertical-align: top;
+    padding-top: 10px;
+    margin: 25px;
+}
+.inline-block {
+    float: right;
+    list-style-type: none;
+    text-align: right;
+    padding: 10px;
+    margin: 0;
+}
+.inline-block li {
+    display: inline-block;
+    font-size: 30px;
+    padding: 20px;
+    color: rgb(62, 20, 21);
+}
+.header {
+    clear: both;
+    padding-bottom: 100px ;
+    margin-bottom: auto;
+   
+}
+.image {
+    float: left;
+    display: block;
+    justify-content: center;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    height: 00px;
+    padding-left: 35px;
+    
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.name {
+    display: flex;
+    float: left;
+    position: relative;
+    padding-top: 325px;
+    padding-left: 400px;
+    padding-right: 200px;
+    margin-top: auto;
+    margin-left: auto;
+}
+.intro {
+    font-size: 35px;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: normal;
+    justify-content: right;
+    align-items: center;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    height: 00px;
+    padding-top: 425px;
+    padding-left: 750px;
+    padding-right: 200px;
+
+}
+.button {
+    
+}
+.heroImg {
+    clear: both;
+    padding-bottom: 100px ;
+    margin-bottom: auto;
+    height: 1000px;
+    width: 1000px;
+}
+.inline-block-2 {
+    float: right;
+    list-style-type: none;
+    text-align: right;
+    padding: 10px;
+    margin: 0;
+}
+.inline-block-2 li {
+    display: inline-block;
+    font-size: 30px;
+    padding: 20px;
+    color: white;
+}
+.footer {
+    background: rgb(62, 20, 21);
+    color:white;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100vw;
+    flex-grow: 1;
+  }
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .socials {
+    float: left;
+    vertical-align:top;
+    padding-bottom: 10px;
+    margin: 25px;
+}
+@media (max-width:500px) {
+    .footer ul{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    }
+}
